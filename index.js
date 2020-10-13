@@ -58,7 +58,6 @@ client.connect(err => {
                     .toArray((err, documents) => {
                         console.log(date, email, doctors, documents)
                         res.send(documents)
-                        // console.log(documents)
                     })
             })
     })
@@ -117,8 +116,6 @@ client.connect(err => {
                     res.send(result.insertedCount > 0);
                 })
         // })
-
-
     })
 
     app.get('/doctors', (req, res) => {
